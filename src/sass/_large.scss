@@ -1,0 +1,42 @@
+@media (min-width: 1200px) {
+	nav {
+		.container {
+			margin-left: 10em;
+			margin-right: 10em;
+		}
+	}
+	//menu
+	.menu {
+		.wrapper {
+			.container-menu {
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+				gap: 3em;
+
+				.card {
+					width: 320px;
+					height: 350px;
+					.card-text {
+						color: white;
+						h3 {
+							margin-top: 2em;
+							font-size: 1.8rem;
+						}
+						p {
+							padding-top: 1.4em;
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	//galeria
+	.gallery {
+		.container-gallery {
+			margin-bottom: 10em;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+		}
+	}
+}
