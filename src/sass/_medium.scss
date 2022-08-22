@@ -58,24 +58,28 @@
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, 1fr);
 		}
+		.right {
+			right: 2em;
+		}
+		.left {
+			left: 2em;
+		}
 	}
 	.contact {
 		.contact-box {
 			flex-direction: row;
 			iframe {
+				margin-left: 3em;
 				width: 50%;
 				height: 400px;
 			}
 			.contact-text {
 				width: 50%;
 				h3 {
-				
 					font-size: 2.4rem;
 				}
 				p {
-			
 					font-size: 2rem;
-				
 				}
 				.media {
 					font-size: 5rem;

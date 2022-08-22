@@ -1,7 +1,10 @@
-$('.home-gallery').slick({
-	arrows: true,
+$('.news-container').slick({
 	autoplay: true,
-	mobileFirst: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	autoplaySpeed: 2000,
+	centerMode: true,
+	mobileFirst: true,
+	arrows: false,
+	fade: true,
 })

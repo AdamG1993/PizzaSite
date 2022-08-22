@@ -9,6 +9,7 @@
 html {
 	font-size: 62.5%;
 	font-family: 'DynaPuff', cursive;
+	scroll-behavior: smooth;
 }
 //global
 
@@ -29,7 +30,7 @@ html {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 3em;
+	padding: 3em;
 	text-transform: uppercase;
 	font-size: 3em;
 	font-weight: lighter;
@@ -80,7 +81,7 @@ html {
 	justify-self: center;
 	margin: 0 1em;
 	border-bottom: 1px solid red;
-	width: 20%;
+	min-width: 20%;
 }
 //navigation
 nav {
@@ -129,26 +130,24 @@ nav {
 	}
 }
 
-//header
-
-.header {
+.news-container {
 	position: relative;
-	.news-card {
-		max-width: 100%;
-		max-height: 500px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		img {
-			max-width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+	display: flex;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+	img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 300px;
 	}
 }
+
 //menu
 .menu {
-	padding-top: 4em;
+	padding-top: 2em;
 	position: relative;
 	background-color: rgb(250, 250, 250);
 
@@ -156,10 +155,10 @@ nav {
 		.container-menu {
 			position: relative;
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 			grid-template-rows: repeat(1, 1fr);
 			padding-top: 3em;
-			padding: 0 1em;
+			padding: 0 0.2em;
 			place-items: center;
 			gap: 1em;
 		}
@@ -182,12 +181,16 @@ nav {
 		cursor: pointer;
 	}
 	.see-more:hover {
-		background-color: rgb(156, 18, 18);
+		background-color: #9c1212;
 		color: rgb(240, 240, 240);
+	}
+	h2 {
+		z-index: 0;
 	}
 }
 
 .gallery {
+	margin-top: 2em;
 	.container-gallery {
 		display: grid;
 		margin-bottom: 2em;
@@ -201,7 +204,7 @@ nav {
 			transition: transform 0.3s;
 		}
 		img:hover {
-			transform: scale(1.1);
+			transform: scale(1.02);
 		}
 	}
 	.popup {
@@ -222,6 +225,7 @@ nav {
 			max-width: 90%;
 			border: 2px solid white;
 			margin: 0 1em;
+			z-index: 5;
 		}
 	}
 	.hidden {
@@ -257,19 +261,21 @@ nav {
 	}
 	.right,
 	.left {
+		position: absolute;
 		top: 50%;
 		transition: transform 0.3s;
 		cursor: pointer;
+		z-index: 6;
 	}
 	.right {
-		right: 25%;
+		right: 1em;
 	}
 	.left {
-		left: 25%;
+		left: 1em;
 	}
 }
 .contact {
-	margin-top: 6em;
+	margin-top: 2em;
 	.contact-box {
 		display: flex;
 		justify-content: center;
@@ -278,12 +284,14 @@ nav {
 		background-color: #ad1313;
 		color: white;
 		iframe {
+			display: flex;
+			align-self: center;
 			width: 100%;
-			height: 400px;
+			height: 350px;
 		}
 		.contact-text {
 			h3 {
-				margin: 1em 0;
+				margin: 3em 0;
 				text-align: center;
 				font-size: 2rem;
 			}
@@ -298,11 +306,24 @@ nav {
 				text-align: center;
 				transition: color 0.3s;
 				cursor: pointer;
+				padding-bottom: 2em;
 				i:hover {
 					color: rgb(240, 240, 240);
 				}
 			}
 		}
+	}
+}
+//footer
+footer {
+	display: flex;
+	height: 50px;
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+	p {
+		font-size: 1.6em;
+		color: white;
 	}
 }
 
