@@ -9,7 +9,8 @@
 }
 @media (min-width: 576px) {
 	.gallery {
-		.right {
+	
+		.right,.closeImg   {
 			right: 2em;
 		}
 		.left {

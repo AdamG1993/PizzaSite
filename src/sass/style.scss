@@ -235,7 +235,6 @@ nav {
 		position: fixed;
 		background: none;
 		top: 10%;
-		left: 70%;
 		font-size: 5rem;
 		border: none;
 		color: white;
@@ -267,7 +266,8 @@ nav {
 		cursor: pointer;
 		z-index: 6;
 	}
-	.right {
+	.right,
+	.closeImg {
 		right: 1em;
 	}
 	.left {

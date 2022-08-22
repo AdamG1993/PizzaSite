@@ -58,7 +58,8 @@
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, 1fr);
 		}
-		.right {
+		.right,
+		.closeImg {
 			right: 2em;
 		}
 		.left {
